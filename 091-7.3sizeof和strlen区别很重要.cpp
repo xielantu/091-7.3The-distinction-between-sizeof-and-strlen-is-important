@@ -17,7 +17,7 @@ int main()
 
 	void (*ptest)();
 	ptest = test;
-	const char* p = "hello";
+	char* p = (char*)"hello";
 	//p是一个char* ，sizof来计算的时候，得出是计算机用多少字节来表示一个地址
 	printf("sizeof:p		% d\t\n", sizeof(p));
 	printf("sizeof:char*		% d\t\n", sizeof(char*));
